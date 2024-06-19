@@ -1,7 +1,5 @@
-// NewNode3.js
-
 import { Position } from 'reactflow';
-import { AbstractNode } from './abstractNodebstractNode';
+import { AbstractNode } from './abstractNode';
 
 export const NewNode3 = ({ id, data }) => {
   const handles = [
@@ -11,7 +9,7 @@ export const NewNode3 = ({ id, data }) => {
   return (
     <AbstractNode id={id} data={data} type="NewNode3" handles={handles}>
       {() => (
-        <span>This is a new node type 3.</span>
+        <span className="block text-center">This is a new node type 3.</span>
       )}
     </AbstractNode>
   );

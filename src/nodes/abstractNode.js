@@ -1,7 +1,7 @@
 // AbstractNode.js
 
 import { useState } from 'react';
-import { Handle, Position } from 'reactflow';
+import { Handle } from 'reactflow';
 
 export const AbstractNode = ({ id, data, type, children, handles }) => {
   const [currName, setCurrName] = useState(data?.name || id);
@@ -11,8 +11,8 @@ export const AbstractNode = ({ id, data, type, children, handles }) => {
   const handleTypeChange = (e) => setNodeType(e.target.value);
 
   return (
-    <div style={{ width: 200, height: 80, border: '1px solid black' }}>
-      <div>
+    <div className='w-200 h-50 border border-black p-2'>
+      <div >
         <span>{type}</span>
       </div>
       <div>

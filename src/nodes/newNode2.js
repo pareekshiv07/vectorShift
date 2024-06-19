@@ -1,5 +1,3 @@
-// NewNode2.js
-
 import { Position } from 'reactflow';
 import { AbstractNode } from './abstractNode';
 
@@ -11,7 +9,7 @@ export const NewNode2 = ({ id, data }) => {
   return (
     <AbstractNode id={id} data={data} type="NewNode2" handles={handles}>
       {() => (
-        <span>This is a new node type 2.</span>
+        <span className="block text-center">This is a new node type 2.</span>
       )}
     </AbstractNode>
   );
